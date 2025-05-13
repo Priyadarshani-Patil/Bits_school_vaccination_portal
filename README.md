@@ -35,44 +35,43 @@ React (Client) → Axios → Express.js (Server) → MongoDB
 - Express manages routing, validation, and data operations.
 - MongoDB stores students, drives, and admin data.
 
-
 +--------------------------------------+
-|         User (Coordinator)     	     |
-|      - Login                   	     |
+|         User (Coordinator)           |
+|      - Login                         |
 |      - Dashboard                     |
-|      - Manage Students        	     |
-|      - Manage Drives             	   |
-|      - Generate Reports        	     |
+|      - Manage Students               |
+|      - Manage Drives                 |
+|      - Generate Reports              |
 +--------------------------------------+
                  ↓
          (API Requests via Axios)
                  ↓
-+-------------------------------------+
-|      React Frontend App       	    |
-|  - Pages (Login, Dashboard)         |
-|  - Components (Students, Drives)    |
-|  - Axios Services                   |
-|  - Routing (react-router-dom)       |
-+-------------------------------------+
++------------------------------------------------+
+|      React Frontend App                       |
+|  - Pages (Login, Dashboard)                   |
+|  - Components (Students, Drives)              |
+|  - Axios Services                             |
+|  - Routing (react-router-dom)                 |
++------------------------------------------------+
                  ↓
           (REST API Calls)
                  ↓
-+------------------------------------+
-|    Node.js + Express Backend       |
-|  - Routes (API Endpoints)          |
-|  - Controllers (Business Logic)    |
-|  - Models (Mongoose schemas)       |
-|  - Middlewares (Auth, Validation)  |
-+------------------------------------+
++------------------------------------------------+
+|    Node.js + Express Backend                  |
+|  - Routes (API Endpoints)                     |
+|  - Controllers (Business Logic)               |
+|  - Models (Mongoose schemas)                  |
+|  - Middlewares (Auth, Validation)             |
++------------------------------------------------+
                  ↓
          (Database Queries)
                  ↓
-+------------------------------+
-|         MongoDB Database     |
-|  - Students Collection       |
-|  - Drives Collection         |
-|  - Vaccination Records       |
-+------------------------------+
++--------------------------------------+
+|         MongoDB Database            |
+|  - Students Collection              |
+|  - Drives Collection                |
+|  - Vaccination Records             |
++--------------------------------------+
 
 
 ## 🛠️ Tech Stack
