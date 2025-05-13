@@ -35,43 +35,18 @@ React (Client) → Axios → Express.js (Server) → MongoDB
 - Express manages routing, validation, and data operations.
 - MongoDB stores students, drives, and admin data.
 
-+--------------------------------------+
-|         User (Coordinator)           |
-|      - Login                         |
-|      - Dashboard                     |
-|      - Manage Students               |
-|      - Manage Drives                 |
-|      - Generate Reports              |
-+--------------------------------------+
-                 ↓
-         (API Requests via Axios)
-                 ↓
-+------------------------------------------------+
-|      React Frontend App                       |
-|  - Pages (Login, Dashboard)                   |
-|  - Components (Students, Drives)              |
-|  - Axios Services                             |
-|  - Routing (react-router-dom)                 |
-+------------------------------------------------+
-                 ↓
-          (REST API Calls)
-                 ↓
-+------------------------------------------------+
-|    Node.js + Express Backend                  |
-|  - Routes (API Endpoints)                     |
-|  - Controllers (Business Logic)               |
-|  - Models (Mongoose schemas)                  |
-|  - Middlewares (Auth, Validation)             |
-+------------------------------------------------+
-                 ↓
-         (Database Queries)
-                 ↓
-+--------------------------------------+
-|         MongoDB Database            |
-|  - Students Collection              |
-|  - Drives Collection                |
-|  - Vaccination Records             |
-+--------------------------------------+
+### Flow Diagram
+
+| **User (Coordinator)**     | **React Frontend App**  | **Node.js + Express Backend** | **MongoDB Database** |
+|----------------------------|--------------------------|--------------------------------|-----------------------|
+| - Login                    | - Pages (Login, Dashboard) | - Routes (API Endpoints)     | - Students Collection |
+| - Dashboard                | - Components (Students, Drives) | - Controllers (Business Logic) | - Drives Collection   |
+| - Manage Students          | - Axios Services         | - Models (Mongoose schemas)   | - Vaccination Records |
+| - Manage Drives            | - Routing (react-router-dom) | - Middlewares (Auth, Validation) |                       |
+| - Generate Reports         |                          |                                |                       |
+| **↓**                      | **↓**                    | **↓**                          | **↓**                 |
+| (API Requests via Axios)   | (REST API Calls)         | (Database Queries)             |                       |
+
 
 ## 🛠️ Tech Stack
 
