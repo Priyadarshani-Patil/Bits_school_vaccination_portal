@@ -7,7 +7,7 @@ This system enables secure login, dashboard management, student and drive record
 
 - [System Overview](#system-overview)
 - [Architecture](#architecture)
-- Flow Diagram(#Flow Diagram)
+- [Flow Diagram](#Flow-diagram)
 - [Tech Stack](#tech-stack)
 - [Frontend-Backend Interaction](#frontend-backend-interaction)
 - [API Endpoints](#api-endpoints)
