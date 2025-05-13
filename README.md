@@ -73,7 +73,6 @@ React (Client) → Axios → Express.js (Server) → MongoDB
 |  - Vaccination Records             |
 +--------------------------------------+
 
-
 ## 🛠️ Tech Stack
 
 | Component       | Tech Stack        		  |
